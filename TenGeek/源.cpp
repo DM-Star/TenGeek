@@ -696,8 +696,8 @@ int main() {
 	}
 	temp.clear();
 
-	int bestpoint = 130384;
-	int useblock = 3870;
+	int bestpoint = 1432;
+	int useblock = 163;
 
 	for (int it = 0; it < 3000; it++) {
 		/*for (holepunish = 10; holepunish <= 20; holepunish++) {
@@ -730,7 +730,7 @@ int main() {
 		sout.clear();
 
 		
-		if (((double)map.point / (i + 1) > ((double)bestpoint / (useblock + 1)))) {
+		if (map.point > bestpoint) {
 			out << newops << "', score: ";
 			out << map.point;
 			out << " }).then(({data}) => { console.log('提交结果', data); if (data.info) { console.log(data.info) } }); ";
